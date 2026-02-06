@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ظلال الأحساء للخيام والمظلات</title>
+    <link rel="icon" href="https://i.postimg.cc/1X9Q0jm3/1769972033960.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* الأساسيات */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Tajawal', 'Segoe UI', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        /* الترويسة الذهبية */
+        .golden-header {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4D03F 50%, #D4AF37 100%);
+            padding: 15px 0;
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
+            position: sticky;
+            top: 0;
+            z-index: 1001;
+            border-bottom: 3px solid #8B6914;
+            width: 100%;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px;
+        }
+        
+        .logo-title-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo-container {
+            width: 70px;
+            height: 70px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 5px 15px rgba(139, 105, 20, 0.3);
+            overflow: hidden;
+        }
+        
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .site-title h1 {
+            color: #5D4037;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 2px;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+        }
+        
+        .site-title .tagline {
+            color: #8B6914;
+            font-size: 0.95rem;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 4px 12px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .phone-icon {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8B6914;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 12px rgba(139, 105, 20, 0.3);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        /* شريط الأخبار */
+        .news-ticker-bar {
+            background: linear-gradient(90deg, #1A472A, #2E8B57);
+            padding: 10px 0;
+            overflow: hidden;
+            border-bottom: 3px solid #D4AF37;
+            direction: ltr;
+            position: relative;
+            z-index: 1000;
+        }
+        
+        .ticker-wrapper {
+            display: flex;
+            white-space: nowrap;
+            width: max-content;
+            animation: ticker-move 70s linear infinite; 
+        }
+        
+        .ticker-item {
+            display: flex;
+            align-items: center;
+            padding: 0 60px;
+            color: white;
+            font-size: 2.3rem;
+            font-weight: 900;
+            direction: rtl;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+        }
+
+        .highlight-gold {
+            color: #F4D03F;
+            margin: 0 10px;
+        }
+
+        @keyframes ticker-move {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0%); }
+        }
+
+        /* الموبايل */
+        @media (max-width: 768px) {
+            .ticker-item { font-size: 1.5rem; padding: 0 30px; }
+            .news-ticker-bar { padding: 6px 0; }
+            .site-title h1 { font-size: 1.4rem; }
+            .ticker-wrapper { animation-duration: 40s; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="golden-header">
+        <div class="header-container">
+            <div class="logo-title-section">
+                <div class="logo-container">
+                    <img src="https://i.postimg.cc/1X9Q0jm3/1769972033960.png" alt="شعار ظلال الأحساء">
+                </div>
+                <div class="site-title">
+                    <h1>ظلال الأحساء للخيام والمظلات</h1>
+                    <span class="tagline">نُظلّلك.. نحميك.. نُجمّلك</span>
+                </div>
+            </div>
+            <div class="contact-simple">
+                <a href="tel:0544459478" class="phone-icon" title="اتصل الآن">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="news-ticker-bar">
+        <div class="ticker-wrapper">
+            <div class="ticker-item">
+                <span class="highlight-gold">مرحباً بكم في ظلال الأحساء</span>.. حيث يلتقي الفن بالفخامة 🌴
+            </div>
+            
+            <div class="ticker-item">
+                نسعد بخدمة أهالينا في <span class="highlight-gold">الهفوف • المبرز • وكافة قرى الأحساء</span>
+            </div>
+
+            <div class="ticker-item">
+                نصمم <span class="highlight-gold">مظلات وسواتر</span> تعيش عمراً وتجمل منزلاً 🛡️
+            </div>
+
+            <div class="ticker-item">
+                فخامة <span class="highlight-gold">الخيام الملكية</span> وبيوت الشعر بلمسة حساوية أصيلة ⛺
+            </div>
+
+            <div class="ticker-item">
+                تركيب <span class="highlight-gold">برجولات وحدائق • هناجر</span> بأعلى جودة 🏗️
+            </div>
+
+            <div class="ticker-item">
+                📞 تواصل معنا: <span class="highlight-gold">0544459478</span>.. استشارتكم تسعدنا 📞
+            </div>
+            
+            <div class="ticker-item">
+                <span class="highlight-gold">ظلال الأحساء</span>.. الاسم الأول في عالم التظليل بالمحافظة 🏆
+            </div>
+        </div>
+    </section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+    /* تصميم السلايدر */
+    .slider-section {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+        background: #000;
+    }
+
+    .slider-track {
+        display: flex;
+        width: 800%; /* عدد الصور (8) * 100 */
+        height: 100%;
+        transition: transform 0.8s ease-in-out;
+    }
+
+    .slide-box {
+        width: 12.5%; /* 100% ÷ 8 */
+        height: 100%;
+        position: relative;
+    }
+
+    .slide-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.8;
+    }
+
+    .slide-label {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
+        color: white;
+        background: rgba(26, 71, 42, 0.85);
+        padding: 15px 35px;
+        border-right: 8px solid #D4AF37;
+        border-radius: 5px;
+        z-index: 10;
+    }
+
+    .slide-label h2 {
+        font-size: 2.2rem;
+        font-weight: 900;
+        margin: 0;
+        font-family: 'Tajawal', sans-serif;
+    }
+
+    /* أزرار التواصل العائمة */
+    .sticky-contact {
+        position: fixed;
+        left: 20px;
+        bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 9999;
+    }
+
+    .btn-float {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: 0.3s;
+    }
+
+    .whatsapp-btn { background-color: #25D366; animation: pulse-green 2s infinite; }
+    .call-btn { background-color: #D4AF37; }
+
+    .btn-float:hover { transform: scale(1.1) rotate(5deg); }
+
+    @keyframes pulse-green {
+        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    @media (max-width: 768px) {
+        .slider-section { height: 350px; }
+        .slide-label h2 { font-size: 1.4rem; }
+        .slide-label { bottom: 20px; right: 20px; padding: 10px 20px; }
+    }
+</style>
+
+<section class="slider-section">
+    <div class="slider-track" id="sliderTrack">
+        <div class="slide-box">
+            <img src="https://i.postimg.cc/Cx88V22f/5361556363529621698_120.jpg" alt="مظلات">
+            <div class="slide-label"><h2>مظلات سيارات وحدائق</h2></div>
+        </div>
+        <div class="slide-box">
+            <img src="https://i.postimg.cc/wMdWzJqR/5296776303811955485_121.jpg" alt="سواتر">
+            <div class="slide-label"><h2>سواتر خشبية وحديد ليزر</h2></div>
+        </div>
+        <div class="slide-box">
+            <img src="https://i.postimg.cc/bvcpKC7W/5285107341525191510_120.jpg" alt="خيام">
+            <div class="slide-label"><h2>خيام وبيوت شعر ملكية</h2></div>
+        </div>
+        <div class="slide-box">
+            <img src="https://i.postimg.cc/ncBVVtnd/5285107341525191588_121.jpg" alt="هناجر">
+            <div class="slide-label"><h2>هناجر ومستودعات ضخمة</h2></div>
+        </div>
+        <div class="slide-box">
+            <img src="https://i.postimg.cc/GmSsGCsz/5285107341525191459_120.jpg" alt="برجولات">
+            <div class="slide-label"><h2>برجولات وجلسات مودرن</h2></div>
+        </div>
+        <div class="slide-box">
+            <img src="https://i.postimg.cc/SsRTVqZQ/5447603825691790818_121.jpg" alt="قرميد">
+            <div class="slide-label"><h2>تركيب قرميد وطني وإيطالي</h2></div>
+        </div>
+        <div class="slide-box">
+            <img src="https://i.postimg.cc/kGVHM98W/5289875884800150546_121.jpg" alt="تنسيق">
+            <div class="slide-label"><h2>تنسيق حدائق وشلالات</h2></div>
+        </div>
+        <div class="slide-box">
+            <img src="https://i.postimg.cc/GpY6GbSZ/5409136556695555524_119.jpg" alt="ديكورات">
+            <div class="slide-label"><h2>ديكورات وبديل خشب</h2></div>
+        </div>
+    </div>
+</section>
+
+<div class="sticky-contact">
+    <a href="https://wa.me/966544459478" class="btn-float whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:0544459478" class="btn-float call-btn">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+</div>
+
+<script>
+    const track = document.getElementById('sliderTrack');
+    let currentSlide = 0;
+    function moveSlider() {
+        currentSlide++;
+        if (currentSlide >= 8) currentSlide = 0;
+        track.style.transform = `translateX(${currentSlide * 12.5}%)`;
+    }
+    setInterval(moveSlider, 4000);
+</script>
+
+<style>
+    /* قسم الخدمات الرئيسي */
+    .services-grid-section {
+        padding: 60px 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+        font-family: 'Tajawal', sans-serif;
+    }
+
+    .section-title {
+        font-size: 2.8rem;
+        color: #1A472A;
+        font-weight: 900;
+        margin-bottom: 10px;
+        position: relative;
+        display: inline-block;
+    }
+
+    .section-title::after {
+        content: '';
+        width: 60%;
+        height: 4px;
+        background: #D4AF37;
+        display: block;
+        margin: 10px auto;
+        border-radius: 2px;
+    }
+
+    /* الحاوية الشبكية */
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        max-width: 1250px;
+        margin: 40px auto;
+    }
+
+    /* رابط البطاقة بالكامل */
+    .service-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    /* بطاقة الخدمة */
+    .service-card {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: 1px solid #eee;
+        cursor: pointer;
+    }
+
+    .service-card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        border-color: #D4AF37;
+    }
+
+    .service-image {
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .service-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+    }
+
+    /* تلميح "اضغط للتفاصيل" */
+    .view-more-overlay {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(26, 71, 42, 0.6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 700;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .service-card:hover .view-more-overlay {
+        opacity: 1;
+    }
+
+    .service-card:hover .service-image img {
+        transform: scale(1.1);
+    }
+
+    .service-content {
+        padding: 25px;
+        background: white;
+    }
+
+    .service-content h3 {
+        font-size: 1.7rem;
+        color: #1A472A;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    .click-hint {
+        color: #D4AF37;
+        font-size: 0.9rem;
+        margin-top: 10px;
+        display: block;
+        font-weight: 600;
+    }
+
+    /* الموبايل */
+    @media (max-width: 768px) {
+        .section-title { font-size: 2rem; }
+        .services-container { grid-template-columns: 1fr; padding: 0 10px; }
+    }
+</style>
+
+<section class="services-grid-section">
+    <h2 class="section-title">أقسامنا المتخصصة</h2>
+    <p style="color: #666;">اضغط على أي قسم لاستعراض سابقة أعمالنا وصور المشاريع</p>
+
+    <div class="services-container">
+        
+        <a href="hanajir.html" class="service-link">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://i.postimg.cc/ncBVVtnd/5285107341525191588_121.jpg" alt="هناجر">
+                    <div class="view-more-overlay">مشاهدة الصور 📂</div>
+                </div>
+                <div class="service-content">
+                    <h3>هناجر ومستودعات</h3>
+                    <span class="click-hint">اضغط للتفاصيل <i class="fas fa-chevron-left"></i></span>
+                </div>
+            </div>
+        </a>
+
+        <a href="mazallat.html" class="service-link">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://i.postimg.cc/Cx88V22f/5361556363529621698_120.jpg" alt="مظلات">
+                    <div class="view-more-overlay">مشاهدة الصور 📂</div>
+                </div>
+                <div class="service-content">
+                    <h3>مظلات سيارات وحدائق</h3>
+                    <span class="click-hint">اضغط للتفاصيل <i class="fas fa-chevron-left"></i></span>
+                </div>
+            </div>
+        </a>
+
+        <a href="khayam.html" class="service-link">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://i.postimg.cc/bvcpKC7W/5285107341525191510_120.jpg" alt="خيام">
+                    <div class="view-more-overlay">مشاهدة الصور 📂</div>
+                </div>
+                <div class="service-content">
+                    <h3>خيام وبيوت شعر ملكية</h3>
+                    <span class="click-hint">اضغط للتفاصيل <i class="fas fa-chevron-left"></i></span>
+                </div>
+            </div>
+        </a>
+
+        <a href="sawater.html" class="service-link">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://i.postimg.cc/wMdWzJqR/5296776303811955485_121.jpg" alt="سواتر">
+                    <div class="view-more-overlay">مشاهدة الصور 📂</div>
+                </div>
+                <div class="service-content">
+                    <h3>سواتر منزلية وحديد</h3>
+                    <span class="click-hint">اضغط للتفاصيل <i class="fas fa-chevron-left"></i></span>
+                </div>
+            </div>
+        </a>
+
+        <a href="barjolat.html" class="service-link">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://i.postimg.cc/GmSsGCsz/5285107341525191459_120.jpg" alt="برجولات">
+                    <div class="view-more-overlay">مشاهدة الصور 📂</div>
+                </div>
+                <div class="service-content">
+                    <h3>برجولات وجلسات خارجية</h3>
+                    <span class="click-hint">اضغط للتفاصيل <i class="fas fa-chevron-left"></i></span>
+                </div>
+            </div>
+        </a>
+
+        <a href="gardens.html" class="service-link">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://i.postimg.cc/kGVHM98W/5289875884800150546_121.jpg" alt="تنسيق">
+                    <div class="view-more-overlay">مشاهدة الصور 📂</div>
+                </div>
+                <div class="service-content">
+                    <h3>تنسيق حدائق وشلالات</h3>
+                    <span class="click-hint">اضغط للتفاصيل <i class="fas fa-chevron-left"></i></span>
+                </div>
+            </div>
+        </a>
+
+        <a href="qarmid.html" class="service-link">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://i.postimg.cc/SsRTVqZQ/5447603825691790818_121.jpg" alt="قرميد">
+                    <div class="view-more-overlay">مشاهدة الصور 📂</div>
+                </div>
+                <div class="service-content">
+                    <h3>تركيب قرميد وطني</h3>
+                    <span class="click-hint">اضغط للتفاصيل <i class="fas fa-chevron-left"></i></span>
+                </div>
+            </div>
+        </a>
+
+        <a href="decor.html" class="service-link">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://i.postimg.cc/GpY6GbSZ/5409136556695555524_119.jpg" alt="ديكورات">
+                    <div class="view-more-overlay">مشاهدة الصور 📂</div>
+                </div>
+                <div class="service-content">
+                    <h3>ديكورات وبديل خشب</h3>
+                    <span class="click-hint">اضغط للتفاصيل <i class="fas fa-chevron-left"></i></span>
+                </div>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<section class="seo-content-section" style="direction: rtl; text-align: right; font-family: 'Tajawal', sans-serif; line-height: 1.8; color: #444; background: #fff; padding: 60px 20px;">
+    <div class="content-container" style="max-width: 1100px; margin: 0 auto;">
+        
+        <h2 style="color: #1A472A; font-size: 2.5rem; font-weight: 900; margin-bottom: 20px; border-right: 8px solid #D4AF37; padding-right: 20px;">ظلال الأحساء: الريادة في فنون المظلات والخيام والهناجر</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 30px;">
+            مرحباً بكم في <strong>مؤسسة ظلال الأحساء</strong>، الشريك الموثوق لكل من يبحث عن الفخامة والجودة في عالم الحدادة الفنية والديكورات الخارجية. نحن نفخر بتقديم حلول متكاملة تغطي كافة احتياجاتكم في <strong>الأحساء والمنطقة الشرقية</strong>، مستلهمين تصاميمنا من عبق تاريخ <strong>هجر</strong> العريق مع دمجها بأحدث صيحات التصميم العالمي. إن هدفنا ليس مجرد التركيب، بل تقديم تحف معمارية توفر لكم الراحة والأمان والجمال.
+        </p>
+
+        <hr style="border: 0; height: 1px; background: #eee; margin: 40px 0;">
+
+        <div class="services-detailed-text">
+            
+            <h3 style="color: #1A472A; font-size: 1.8rem; font-weight: 800; margin-top: 30px;">1. مظلات وسواتر الأحساء: حماية ذكية وخصوصية مطلقة</h3>
+            <p>
+                تعتبر الحرارة العالية في منطقة الأحساء تحدياً كبيراً، ولذلك نقدم في <strong>ظلال الأحساء</strong> أفضل حلول <strong>مظلات السيارات</strong> المصنوعة من قماش الـ PVC الكوري والألماني عالي الكثافة، والذي يتميز بقدرته الفائقة على عزل الأشعة فوق البنفسجية بنسبة 100%. نحن نغطي كافة أحياء الهفوف والمبرز، من <strong>حي السلمانية والجامعيين</strong> إلى <strong>حي الخالدية والبندرية</strong>.
+            </p>
+            <p>
+                أما بالنسبة لـ <strong>السواتر</strong>، فنحن ندرك أهمية الخصوصية للبيت السعودي. لذا نوفر <strong>سواتر حديد ليزر</strong> بتصاميم هندسية رائعة، و<strong>سواتر خشب بلاستيكي (WPC)</strong> تقاوم الرطوبة والتشقق، مما يضمن لكم جلسة عائلية آمنة بعيداً عن أعين المتطفلين، خاصة في الفلل والقصور السكنية الجديدة.
+            </p>
+
+            <h3 style="color: #1A472A; font-size: 1.8rem; font-weight: 800; margin-top: 30px;">2. خيام وبيوت شعر ملكية: كرم الضيافة في قلب هجر</h3>
+            <p>
+                لا تكتمل هيبة المنزل الحساوي إلا بوجود <strong>بيت شعر</strong> أو خيمة ملكية تعكس أصالة الكرم العربي. نحن متخصصون في بناء <strong>الخيام الملكية</strong> وتجهيزها بأفخم أنواع السدو والأقمشة الداخلية، مع تزويدها بأنظمة عزل مائي وحراري متطورة. سواء كنت في <strong>الجفر أو الطرف أو العمران</strong>، فإننا نصل إليك لنبني مجلساً يفخر به ضيوفك، مع مراعاة أدق التفاصيل في الإضاءة التراثية والديكورات الجبسية والخشبية.
+            </p>
+
+            <h3 style="color: #1A472A; font-size: 1.8rem; font-weight: 800; margin-top: 30px;">3. هناجر ومستودعات: حلول صناعية بمواصفات عالمية</h3>
+            <p>
+                للمشاريع التجارية والصناعية، نعد أفضل <strong>مقاول هناجر في الأحساء</strong>. نقوم بتنفيذ <strong>بناء مستودعات</strong> ضخمة وورش عمل في <strong>المنطقة الصناعية</strong> وكافة مناطق الشرقية. نستخدم حديد سابك عالي الجودة وبمواصفات هندسية دقيقة تتحمل الرياح والظروف المناخية الصعبة، مع توفير حلول الشينكو المعزول (ساندوتش بانل) للحفاظ على درجة حرارة مثالية داخل المستودع.
+            </p>
+
+            <h3 style="color: #1A472A; font-size: 1.8rem; font-weight: 800; margin-top: 30px;">4. تنسيق الحدائق والبرجولات: واحة من الجمال</h3>
+            <p>
+                تنسيق الحدائق هو فن تحويل المساحات الصامتة إلى جنات ناطقة. نقدم في ظلال الأحساء خدمات <strong>تركيب العشب الصناعي</strong>، وتصميم <strong>الشلالات والنوافير</strong> التي تلطف الأجواء الحارة. كما نتميز بتركيب <strong>برجولات خشبية ومودرن</strong> توفر ظلاً خفيفاً وجذاباً في حدائق المنازل والأسطح، مما يجعلها المكان المفضل للاسترخاء في المساء.
+            </p>
+
+            <h3 style="color: #1A472A; font-size: 1.8rem; font-weight: 800; margin-top: 30px;">5. أعمال القرميد والديكورات الحديثة</h3>
+            <p>
+                خدماتنا تمتد لتشمل تركيب <strong>قرميد وطني وإسباني</strong> للأسطح والواجهات يعطي لمسة كلاسيكية فخمة. ولا ننسى الديكورات الحديثة مثل <strong>بديل الخشب وبديل الرخام</strong> التي أصبحت أساساً في التصميم الداخلي والخارجي المعاصر.
+            </p>
+        </div>
+
+        <div class="keywords-cloud" style="background: #f4f4f4; padding: 25px; border-radius: 10px; margin-top: 40px; border: 1px dashed #D4AF37;">
+            <h4 style="color: #1A472A; margin-bottom: 15px;">الكلمات المفتاحية الأكثر بحثاً (الأحساء والشرقية):</h4>
+            <p style="font-size: 0.95rem; color: #666;">
+                مظلات سيارات الأحساء، سواتر المبرز، خيام ملكية الهفوف، بيوت شعر فخمة، حداد مظلات وسواتر، هناجر حديد، مستودعات شينكو، تنسيق حدائق منزلية، عشب صناعي، برجولات مودرن، قرميد إيطالي، مظلات لكسان، سواتر ليزر، مقاول حدادة، مظلات مساجد، مظلات مدارس الأحساء، بديل خشب خارجي، حدادة فنية، واحة الأحساء للظل، أسعار المظلات بالشرقية، تركيب مظلات طريق الظهران، سواتر حي المحاسن، خيام حي السلمانية.
+            </p>
+        </div>
+
+        <div class="cta-box" style="margin-top: 50px; text-align: center; background: #1A472A; color: #fff; padding: 40px; border-radius: 15px;">
+            <h2 style="color: #F4D03F; margin-bottom: 20px;">جاهزون لتنفيذ مشاريعكم بأعلى جودة</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 25px;">لا تتردد في طلب الاستشارة المجانية والمعاينة الفورية لموقعك.</p>
+            <a href="tel:0544459478" style="display: inline-block; background: #D4AF37; color: #fff; padding: 15px 40px; text-decoration: none; border-radius: 50px; font-weight: 800; font-size: 1.2rem; transition: 0.3s;">اتصل الآن: 0544459478</a>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* تصميم تذييل الصفحة */
+    .main-footer {
+        background-color: #1A472A;
+        color: #ffffff;
+        padding: 60px 20px 20px;
+        font-family: 'Tajawal', sans-serif;
+        border-top: 5px solid #D4AF37;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 40px;
+    }
+
+    .footer-section h3 {
+        color: #D4AF37;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .footer-section h3::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 50px;
+        height: 2px;
+        background: #D4AF37;
+    }
+
+    /* الروابط الاجتماعية */
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        background: rgba(255,255,255,0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: white;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .social-icon:hover {
+        background: #D4AF37;
+        color: #1A472A;
+        transform: translateY(-5px);
+    }
+
+    /* خريطة جوجل */
+    .map-container {
+        border-radius: 15px;
+        overflow: hidden;
+        border: 2px solid #D4AF37;
+        height: 200px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        font-size: 0.9rem;
+        color: #ccc;
+    }
+
+    .contact-info-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .contact-info-list li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contact-info-list i {
+        color: #D4AF37;
+    }
+
+    /* الموبايل */
+    @media (max-width: 768px) {
+        .footer-container { grid-template-columns: 1fr; text-align: center; }
+        .footer-section h3::after { right: 50%; transform: translateX(50%); }
+        .contact-info-list li { justify-content: center; }
+        .social-links { justify-content: center; }
+    }
+</style>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        
+        <div class="footer-section">
+            <img src="https://i.postimg.cc/1X9Q0jm3/1769972033960.png" alt="شعار ظلال الأحساء" style="width: 100px; margin-bottom: 15px;">
+            <h3>ظلال الأحساء</h3>
+            <p>الرائدون في عالم المظلات والسواتر والخيام والبرجولات في الأحساء والشرقية. جودة ننافس بها، وضمان نلتزم به.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>قنوات التواصل</h3>
+            <ul class="contact-info-list">
+                <li><i class="fas fa-phone-alt"></i> 0544459478</li>
+                <li><i class="fab fa-whatsapp"></i> 966544459478</li>
+                <li><i class="fas fa-map-marker-alt"></i> الأحساء، المنطقة الشرقية</li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@ahsa.shades" class="social-icon" target="_blank" title="تيك توك"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/al_ahsa_mizalaat" class="social-icon" target="_blank" title="انستقرام"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/solomons456" class="social-icon" target="_blank" title="تويتر"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/share/17bH96Jg11/" class="social-icon" target="_blank" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h3>موقعنا في الأحساء</h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115160.28253165381!2d49.567117!3d25.378774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e37968511111111%3A0x1111111111111111!2z2KfZhNij2K3Ys9in2KE!5e0!3m2!1sar!2ssa!4v1700000000000" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 جميع الحقوق محفوظة لمؤسسة <strong>ظلال الأحساء</strong> - صُمم بكل فخر في هجر</p>
+    </div>
+</footer>
+
+</body>
+</html>

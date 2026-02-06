@@ -1,0 +1,584 @@
+<link rel="icon" type="image/png" href="https://i.postimg.cc/1X9Q0jm3/1769972033960.png">
+<link rel="apple-touch-icon" href="https://i.postimg.cc/1X9Q0jm3/1769972033960.png">
+<title>تنسيق حدائق ظلال الأحساء</title>
+<header style="
+    background: #000; 
+    border-bottom: 3px solid #BF953F; 
+    position: sticky; 
+    top: 0; 
+    z-index: 9999; 
+    padding: 10px 0; 
+    direction: rtl;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.8);
+">
+    <div style="
+        max-width: 1200px; 
+        margin: 0 auto; 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 0 15px;
+    ">
+        
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <img src="https://i.postimg.cc/1X9Q0jm3/1769972033960.png" alt="ظلال الأحساء" style="height: 65px; width: auto; border: 1px solid #BF953F; background: #fff;">
+            <div style="line-height: 1.2;">
+                <h1 style="margin: 0; font-size: 1.4rem; color: #BF953F; font-weight: 900;">ظلال الأحساء</h1>
+                <p style="margin: 0; font-size: 0.75rem; color: #fff; letter-spacing: 1px; font-weight: bold;">PREMIUM GARDENS</p>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 8px;">
+            <a href="tel:966544459478" style="
+                text-decoration: none; 
+                background: #BF953F; 
+                color: #000; 
+                padding: 10px 15px; 
+                border-radius: 4px; 
+                font-weight: 900; 
+                font-size: 0.85rem; 
+                display: flex; 
+                align-items: center; 
+                gap: 5px;
+            ">
+                <i class="fas fa-phone-alt"></i> اتصل
+            </a>
+            <a href="https://wa.me/966544459478" style="
+                text-decoration: none; 
+                border: 1px solid #BF953F; 
+                color: #BF953F; 
+                padding: 10px 15px; 
+                border-radius: 4px; 
+                font-weight: 900; 
+                font-size: 0.85rem;
+                display: flex; 
+                align-items: center; 
+                gap: 5px;
+            ">
+                <i class="fab fa-whatsapp"></i> واتساب
+            </a>
+        </div>
+
+    </div>
+</header>
+
+<style>
+    /* لضمان تناسق الخطوط والأيقونات */
+    @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+    
+    /* تصغير الحجم في الشاشات الصغيرة جداً لمنع التداخل */
+    @media (max-width: 400px) {
+        header h1 { font-size: 1.1rem !important; }
+        header img { height: 50px !important; }
+        header a { padding: 8px 10px !important; font-size: 0.75rem !important; }
+    }
+</style>
+<div class="news-ticker-container">
+    <div class="ticker-label">آخر الأخبار</div>
+    <div class="ticker-wrap">
+        <div class="ticker">
+            <div class="ticker__item">💎 خصم خاص 15% على تنسيق الحدائق وتركيب العشب الصناعي في الهفوف والمبرز.</div>
+            <div class="ticker__item">🌟 جديدنا: تركيب سواتر قص ليزر بتصاميم مودرن 2026 وضمان 10 سنوات.</div>
+            <div class="ticker__item">✅ تنفيذ مشاريع المظلات والسواتر في كافة أحياء الأحساء والمنطقة الشرقية.</div>
+            <div class="ticker__item">🏗️ توريد وتركيب بيوت الشعر والخيام الملكية بمواصفات عالمية.</div>
+            <div class="ticker__item">📞 اتصل الآن للحصول على المعاينة والمقايسة المجانية: 0544459478</div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* حاوية الشريط */
+    .news-ticker-container {
+        display: flex;
+        align-items: center;
+        background: #1a1a1a;
+        border-bottom: 2px solid #BF953F;
+        height: 40px;
+        overflow: hidden;
+        direction: rtl;
+        font-family: sans-serif;
+    }
+
+    /* ملصق "آخر الأخبار" */
+    .ticker-label {
+        background: #BF953F;
+        color: #000;
+        padding: 0 20px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+        font-size: 0.9rem;
+        z-index: 2;
+        white-space: nowrap;
+        position: relative;
+        box-shadow: 5px 0 15px rgba(0,0,0,0.5);
+    }
+
+    /* منطقة الحركة */
+    .ticker-wrap {
+        flex-grow: 1;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-right: 20px;
+    }
+
+    .ticker {
+        display: inline-block;
+        padding-right: 100%;
+        animation: ticker 30s linear infinite;
+    }
+
+    .ticker__item {
+        display: inline-block;
+        padding: 0 30px;
+        font-size: 0.95rem;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    /* حركة الشريط من اليمين لليسار */
+    @keyframes ticker {
+        0% { transform: translate3d(0, 0, 0); visibility: visible; }
+        100% { transform: translate3d(100%, 0, 0); }
+    }
+
+    /* توقف الحركة عند مرور الماوس */
+    .ticker-wrap:hover .ticker {
+        animation-play-state: paused;
+    }
+
+    /* تحسين للجوال */
+    @media (max-width: 600px) {
+        .ticker__item { font-size: 0.85rem; padding: 0 15px; }
+        .ticker-label { padding: 0 10px; font-size: 0.8rem; }
+    }
+</style>
+<section class="premium-slider" id="gardenSlider">
+    <div class="slide active">
+        <img src="https://i.postimg.cc/XJ1h0XZs/5289875884800150545-121.jpg" alt="تنسيق حدائق الأحساء">
+        <div class="caption"><h2>تصميم حدائق مودرن</h2><p>نحول المساحات الضيقة إلى جنات غناء بأحدث الأساليب.</p></div>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/kGVHM98W/5289875884800150546-121.jpg" alt="عشب صناعي ظلال الأحساء">
+        <div class="caption"><h2>عشب صناعي فائق الكثافة</h2><p>مقاوم للحرارة ويحافظ على لونه الزاهي طوال العام.</p></div>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/B67yGt8C/5296776303811955549-121.jpg" alt="شلالات منزلية">
+        <div class="caption"><h2>شلالات ونوافر جدارية</h2><p>لمسة من الاسترخاء والهدوء داخل حديقة منزلك.</p></div>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/d1NXKD7j/5296776303811955550-121.jpg" alt="تنسيق حدائق الهفوف">
+        <div class="caption"><h2>ديكورات حجرية وعشبية</h2><p>تناغم الطبيعة مع التصميم الهندسي المبتكر.</p></div>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/FRCqQ1f3/5296776303811955551-121.jpg" alt="مظلات حدائق الأحساء">
+        <div class="caption"><h2>برجولات ومظلات حدائق</h2><p>دمج الظل بالجمال لخلق جلسات عائلية لا تُنسى.</p></div>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/rmZbLzdW/5296776303811955552-121.jpg" alt="إضاءة حدائق">
+        <div class="caption"><h2>أنظمة إضاءة ليلية</h2><p>نجعل حديقتك تتلألأ تحت أضواء ظلال الأحساء الساحرة.</p></div>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/QtYPrVBQ/5296776303811955553-121.jpg" alt="عشب جداري">
+        <div class="caption"><h2>تكسيات وعشب جداري</h2><p>تغطية الجدران بلمسات خضراء تعطي شعوراً بالاتساع.</p></div>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/d1NXKD7R/5296776303811955554-121.jpg" alt="جلسات خارجية">
+        <div class="caption"><h2>تصميم جلسات خارجية</h2><p>راحة وفخامة في الهواء الطلق بتصاميم انتقائية.</p></div>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/vB2jdD1V/5296776303811955561-121.jpg" alt="تنسيق حدائق المبرز">
+        <div class="caption"><h2>إتقان في التنفيذ</h2><p>فريقنا المختص يضمن لك أعلى معايير الجودة في كل زاوية.</p></div>
+    </div>
+    <div class="slide">
+        <img src="https://i.postimg.cc/FRCqQ1fS/5296776303811955562-121.jpg" alt="ظلال الأحساء للحدائق">
+        <div class="caption"><h2>ثقة وضمان 10 سنوات</h2><p>نحن نبني الجمال ونضمن استمراره لأجيال.</p></div>
+    </div>
+
+    <div class="slider-controls">
+        <span class="arrow" onclick="plusSlides(-1)">&#10094;</span>
+        <span class="arrow" onclick="plusSlides(1)">&#10095;</span>
+    </div>
+</section>
+
+<style>
+    .premium-slider {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        background: #000;
+        overflow: hidden;
+        border-bottom: 4px solid #BF953F;
+    }
+    .slide {
+        display: none;
+        width: 100%;
+        height: 100%;
+        animation: fadeEffect 1.5s;
+    }
+    .slide.active { display: block; }
+    .slide img { width: 100%; height: 100%; object-fit: cover; filter: brightness(0.8); }
+    
+    .caption {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        background: rgba(0,0,0,0.7);
+        padding: 25px;
+        border-right: 4px solid #BF953F;
+        color: #fff;
+        max-width: 450px;
+        direction: rtl;
+    }
+    .caption h2 { font-size: 2rem; margin: 0; color: #BF953F; font-weight: 900; }
+    .caption p { font-size: 1.1rem; margin-top: 10px; }
+
+    .slider-controls {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .arrow {
+        background: rgba(191, 149, 63, 0.4);
+        color: white;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 50%;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .arrow:hover { background: #BF953F; color: #000; }
+
+    @keyframes fadeEffect {
+        from { opacity: 0.4; transform: scale(1.05); }
+        to { opacity: 1; transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+        .premium-slider { height: 45vh; }
+        .caption { right: 20px; bottom: 20px; padding: 15px; }
+        .caption h2 { font-size: 1.3rem; }
+        .caption p { font-size: 0.8rem; }
+    }
+</style>
+
+<script>
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slide");
+
+    function showSlides() {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active");
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        slides[slideIndex-1].classList.add("active");
+        setTimeout(showSlides, 4000); // تغيير الصورة كل 4 ثوانٍ
+    }
+
+    function plusSlides(n) {
+        slideIndex += n - 1;
+        if (slideIndex < 0) slideIndex = slides.length - 1;
+        // سيتم استدعاء التغيير في الدورة التالية
+    }
+
+    showSlides();
+</script>
+<div class="floating-contact">
+    <a href="https://wa.me/966544459478" class="floating-btn whatsapp-btn" target="_blank" title="راسلنا على الواتساب">
+        <i class="fab fa-whatsapp"></i>
+        <span class="btn-text">واتساب</span>
+    </a>
+
+    <a href="tel:966544459478" class="floating-btn call-btn" title="اتصل بنا الآن">
+        <i class="fas fa-phone-alt"></i>
+        <span class="btn-text">اتصال</span>
+    </a>
+</div>
+
+<style>
+    /* حاوية الأزرار في اليسار */
+    .floating-contact {
+        position: fixed;
+        bottom: 30px;
+        left: 20px; /* التموضع على اليسار */
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        z-index: 99999;
+        direction: rtl;
+    }
+
+    /* التصميم العام للأزرار */
+    .floating-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        color: #fff;
+        text-decoration: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* تأثير النص عند الحوم (Hover) */
+    .btn-text {
+        position: absolute;
+        right: 70px;
+        background: #1a1a1a;
+        color: #BF953F;
+        padding: 5px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        opacity: 0;
+        transition: 0.3s;
+        white-space: nowrap;
+        pointer-events: none;
+        border: 1px solid #BF953F;
+    }
+
+    .floating-btn:hover .btn-text {
+        opacity: 1;
+        right: 65px;
+    }
+
+    /* تخصيص زر الواتساب */
+    .whatsapp-btn {
+        background: #25D366;
+        font-size: 30px;
+        animation: pulse-green 2s infinite;
+    }
+
+    /* تخصيص زر الاتصال */
+    .call-btn {
+        background: #BF953F; /* اللون الذهبي الخاص بك */
+        font-size: 25px;
+        animation: pulse-gold 2s infinite;
+    }
+
+    /* تأثير النبض للواتساب */
+    @keyframes pulse-green {
+        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    /* تأثير النبض للذهبي */
+    @keyframes pulse-gold {
+        0% { box-shadow: 0 0 0 0 rgba(191, 149, 63, 0.7); }
+        70% { box-shadow: 0 0 0 15px rgba(191, 149, 63, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(191, 149, 63, 0); }
+    }
+
+    .floating-btn:hover {
+        transform: scale(1.1) translateY(-5px);
+    }
+
+    /* تحسينات للجوال */
+    @media (max-width: 768px) {
+        .floating-btn {
+            width: 50px;
+            height: 50px;
+            font-size: 22px;
+        }
+        .floating-contact {
+            bottom: 20px;
+            left: 15px;
+        }
+    }
+</style>
+<section style="padding: 60px 20px; background: #fff; direction: rtl; text-align: center; max-width: 1100px; margin: 0 auto; line-height: 1.8;">
+    
+    <h2 style="font-size: 2.2rem; color: #1a1a1a; font-weight: 900; margin-bottom: 25px;">
+        هل تحلم بتحويل فناء منزلك إلى <span style="color: #BF953F;">جنة خاصة؟</span>
+    </h2>
+
+    <div style="font-size: 1.25rem; color: #444; font-weight: 500;">
+        <p style="margin-bottom: 20px;">
+            في <b>ظلال الأحساء</b>، نؤمن أن الحديقة ليست مجرد مساحة خالية خلف جدران المنزل، بل هي الرئة التي يتنفس بها بيتك، والملاذ الذي يجمع العائلة في لحظات السكون والراحة. نحن لا نقوم فقط بزراعة العشب أو تركيب الشلالات، بل <b>نصمم لك حياة جديدة</b>.
+        </p>
+        
+        <p style="margin-bottom: 20px;">
+            تخيل أن تبدأ صباحك بخرير الماء المنبعث من <b>شلال جداري</b> صُمم خصيصاً ليناسب ذوقك، وتستمتع بخضرة <b>العشب الصناعي</b> الذي يظل زاهياً طوال العام رغم حرارة الصيف في الأحساء، محاطاً بـ <b>إضاءة ليلية</b> ساحرة تحول مساؤك إلى تجربة سينمائية داخل منزلك.
+        </p>
+
+        <div style="background: #1a1a1a; color: #BF953F; padding: 30px; border-radius: 15px; margin: 40px 0; border: 2px solid #BF953F; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0; font-size: 1.6rem; font-weight: 900;">لماذا يختار النخبة "ظلال الأحساء"؟</h3>
+            <p style="color: #fff; font-size: 1.1rem;">
+                لأننا نمزج بين <b>دقة الهندسة</b> و<b>روح الفن</b>. نستخدم أجود الخامات العالمية المقاومة للظروف المناخية في المنطقة الشرقية، وننفذ مشاريعنا بضمان يمتد لسنوات، لنضمن لك أن كل ريال تدفعه هو استثمار في راحة عائلتك وقيمة عقارك.
+            </p>
+        </div>
+
+        <h3 style="color: #1a1a1a; font-size: 1.8rem; font-weight: 900;">
+            استعد للإلهام.. استعرض الآن <span style="color: #BF953F;">أضخم كتالوج</span> لأعمالنا المنفذة حديثاً
+        </h3>
+        <p style="font-size: 1.1rem; color: #777;">
+            (في الأسفل، ستجد 35 نموذجاً واقعياً من إبداعاتنا في أحياء الهفوف والمبرز، اختر منها ما يلهمك وسننفذه لك بأعلى جودة)
+        </p>
+    </div>
+
+    <div style="margin-top: 30px; animation: bounce 2s infinite;">
+        <i class="fas fa-chevron-down" style="font-size: 2rem; color: #BF953F;"></i>
+    </div>
+</section>
+
+<style>
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+        40% {transform: translateY(-10px);}
+        60% {transform: translateY(-5px);}
+    }
+</style>
+<section id="full-catalog" style="background-color: #000; padding: 60px 0; direction: rtl; font-family: 'Segoe UI', Tahoma, sans-serif;">
+    
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h2 style="font-size: 2.8rem; color: #BF953F; font-weight: 900; letter-spacing: 1px;">معرض الإنجازات الملكي</h2>
+        <p style="color: #fff; font-size: 1.2rem; margin-top: 10px;">نستعرض معكم 35 نموذجاً من فخر صناعتنا وتنسيقنا في الأحساء</p>
+        <div style="width: 100px; height: 3px; background: #BF953F; margin: 20px auto;"></div>
+    </div>
+
+    <div class="catalog-grid">
+        <div class="c-card"><img src="https://i.postimg.cc/XJ1h0XZs/5289875884800150545-121.jpg" alt="تنسيق حدائق"><div class="c-txt"><h3>إبداع هندسي</h3><p>تصميم ممرات عصرية تناسب الفلل الحديثة.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/kGVHM98W/5289875884800150546-121.jpg" alt="عشب صناعي"><div class="c-txt"><h3>خضرة دائمة</h3><p>أفضل أنواع العشب الصناعي المقاوم للحرارة.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/B67yGt8C/5296776303811955549-121.jpg" alt="شلالات"><div class="c-txt"><h3>شلالات مودرن</h3><p>خرير الماء يبعث الراحة في منزلك.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/d1NXKD7j/5296776303811955550-121.jpg" alt="تنسيق الأحساء"><div class="c-txt"><h3>فخامة المداخل</h3><p>تنسيق مداخل مبتكر يعكس رقي أصحاب المنزل.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/FRCqQ1f3/5296776303811955551-121.jpg" alt="برجولات"><div class="c-txt"><h3>جلسات خارجية</h3><p>برجولات حديدية مدمجة مع خشب طبيعي.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/rmZbLzdW/5296776303811955552-121.jpg" alt="إضاءة حدائق"><div class="c-txt"><h3>سحر الإضاءة</h3><p>أنظمة إنارة ذكية تبرز جمال الحديقة ليلاً.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/QtYPrVBQ/5296776303811955553-121.jpg" alt="عشب جداري"><div class="c-txt"><h3>جدران خضراء</h3><p>عشب جداري ثلاثي الأبعاد بتصاميم جذابة.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/d1NXKD7R/5296776303811955554-121.jpg" alt="تنسيق المبرز"><div class="c-txt"><h3>استغلال المساحات</h3><p>أفكار ذكية للحدائق الصغيرة والمنزلية.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/vB2jdD1V/5296776303811955561-121.jpg" alt="ديكور حدائق"><div class="c-txt"><h3>ديكورات حجرية</h3><p>استخدام الحصى الملون في الممرات.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/FRCqQ1fS/5296776303811955562-121.jpg" alt="مظلات"><div class="c-txt"><h3>حماية وجمال</h3><p>مظلات قماشية وفيمكو بأعلى المعايير.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/hjZwqhJX/5296776303811955563-121.jpg" alt="نوافر"><div class="c-txt"><h3>نوافر حديثة</h3><p>تصميم نوافر بأحجام تناسب كل المساحات.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/ZRsgh09R/5296776303811955577-121.jpg" alt="تنسيق السلمانية"><div class="c-txt"><h3>إطلالات مميزة</h3><p>تنسيق ريفي بلمسة عصرية مبتكرة.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/0QX3qr6r/5296776303811955579-121.jpg" alt="تصميم خارجي"><div class="c-txt"><h3>فن التظليل</h3><p>تغطيات ذكية للمسابح والممرات.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/qRDYdgtq/5296776303811955581-119.jpg" alt="حدائق فخمة"><div class="c-txt"><h3>جودة التنفيذ</h3><p>اهتمام بأدق التفاصيل لضمان التميز.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/sXg8852x/5375329327215480896-121.jpg" alt="سواتر ليزر"><div class="c-txt"><h3>خصوصية تامة</h3><p>سواتر حديد قص ليزر بتصاميم مذهلة.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/d1VXXG0t/5375329327215480898-119.jpg" alt="بيوت شعر"><div class="c-txt"><h3>تراث أصيل</h3><p>بناء بيوت شعر ملكية وتجهيز خيام.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/1t3TTDz4/5375329327215480899-121.jpg" alt="تنسيق حي المحاسن"><div class="c-txt"><h3>تنسيق متكامل</h3><p>من الحفر حتى تسليم المفتاح بأمانة.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/nzS5tMsF/5375329327215480901-121.jpg" alt="عشب جداري ملون"><div class="c-txt"><h3>ألوان الطبيعة</h3><p>دمج النباتات الطبيعية مع الصناعية.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/rmZbLzdy/5375329327215480902-121.jpg" alt="حدائق منزلية"><div class="c-txt"><h3>واحة الهدوء</h3><p>تصميم زوايا للقراءة والاسترخاء.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/rmwbb5pm/5375329327215480903-121.jpg" alt="ظلال الأحساء"><div class="c-txt"><h3>دقة العمل</h3><p>فنيون محترفون لضمان تركيب مثالي.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/zB2M13LJ/5375329327215480904-121.jpg" alt="تصميم لاندسكيب"><div class="c-txt"><h3>تصاميم 3D</h3><p>شاهد حديقتك قبل البدء في التنفيذ.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/cHLjjfJK/5375329327215480905-121.jpg" alt="مظلات سيارات"><div class="c-txt"><h3>حماية سياراتك</h3><p>مظلات مبتكرة تعزل الحرارة بنسبة 100%.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/Ssx55cK2/5375329327215480908-121.jpg" alt="تنسيق حدائق الخالدية"><div class="c-txt"><h3>روعة التنفيذ</h3><p>تحويل الأحواش المنسية إلى تحف فنية.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/j5S99yjS/5377619498266988825-120.jpg" alt="عشب صناعي ملاعب"><div class="c-txt"><h3>عشب للملاعب</h3><p>تجهيز ملاعب منزلية بأسطح آمنة وجودة عالية.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/fLRFFYb4/5377619498266988826-121.jpg" alt="شلالات حجرية"><div class="c-txt"><h3>قوة ومتانة</h3><p>أحجار طبيعية مختارة بعناية للشلالات.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/Kz8VVtYb/5377619498266988827-121.jpg" alt="حدائق السطح"><div class="c-txt"><h3>حدائق السطح</h3><p>نحول سطح منزلك إلى مكانك المفضل.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/Y9CVVQSt/5377619498266988828-121.jpg" alt="ديكورات خشبية"><div class="c-txt"><h3>أناقة الخشب</h3><p>تكسيات خشبية للجدران مقاومة للرطوبة.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/sXg8852V/5377619498266988829-121.jpg" alt="إضاءة ليد"><div class="c-txt"><h3>إضاءة اقتصادية</h3><p>أنظمة LED توفر الطاقة وتزيد الجمال.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/DZwDD1wt/IMG-20260118-WA0010.jpg" alt="تنسيق حدائق راقي"><div class="c-txt"><h3>تناسق الألوان</h3><p>مزيج من الخضرة والرمادي الحجري الحديث.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/rmwbb5wB/IMG-20260118-WA0011.jpg" alt="مظلات وسواتر"><div class="c-txt"><h3>هيكل حديدي</h3><p>قواعد حديدية متينة من حديد سابك الأصلي.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/bJwMM1wW/IMG-20260118-WA0012.jpg" alt="حدائق مودرن"><div class="c-txt"><h3>فن الاسترخاء</h3><p>جلسات خارجية مريحة بتصاميم عالمية.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/XJYhh9YP/IMG-20260118-WA0013.jpg" alt="عشب جداري الأحساء"><div class="c-txt"><h3>جدران نابضة</h3><p>أفضل تصاميم العشب الجداري في المنطقة.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/Tw3SSn34/IMG-20260118-WA0014.jpg" alt="نوافذ زجاجية"><div class="c-txt"><h3>إطلالة داخلية</h3><p>تنسيق يراعي الرؤية من داخل المنزل.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/cHLjjfLk/IMG-20260118-WA0015.jpg" alt="ديكور حدائق الهفوف"><div class="c-txt"><h3>أناقة الممرات</h3><p>دمج الحصى والأخشاب في ممر واحد.</p></div></div>
+        <div class="c-card"><img src="https://i.postimg.cc/Px5cc153/IMG-20260118-WA0016.jpg" alt="حدائق ظلال الأحساء"><div class="c-txt"><h3>ثقة وضمان</h3><p>كل عمل هو شهادة نجاح جديدة لنا.</p></div></div>
+    </div>
+</section>
+
+<style>
+    .catalog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 25px;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .c-card {
+        background: #111;
+        border: 2px solid #BF953F;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+    }
+    .c-card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(191,149,63,0.4); }
+    .c-card img { width: 100%; height: 250px; object-fit: cover; filter: brightness(0.9); transition: 0.5s; }
+    .c-card:hover img { filter: brightness(1.1); transform: scale(1.05); }
+    .c-txt { padding: 20px; text-align: center; }
+    .c-txt h3 { color: #BF953F; margin: 0 0 10px; font-size: 1.3rem; font-weight: 900; }
+    .c-txt p { color: #eee; font-size: 0.95rem; margin: 0; line-height: 1.4; }
+    
+    @media (max-width: 600px) {
+        .catalog-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        .c-card img { height: 160px; }
+        .c-txt { padding: 10px; }
+        .c-txt h3 { font-size: 1rem; }
+        .c-txt p { font-size: 0.75rem; }
+    }
+</style>
+<section style="padding: 60px 20px; background: #1a1a1a; color: #fff; direction: rtl; text-align: center;">
+    <h2 style="color: #BF953F; font-size: 2.2rem; margin-bottom: 40px; font-weight: 900;">كيف نبدأ بتحويل حلمك إلى واقع؟</h2>
+    
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+        <div style="flex: 1; min-width: 250px; padding: 20px; border: 1px dashed #BF953F;">
+            <div style="font-size: 3rem; color: #BF953F; margin-bottom: 15px;">01</div>
+            <h3 style="margin-bottom: 10px;">طلب المعاينة</h3>
+            <p style="color: #ccc;">تواصل معنا لطلب زيارة فنية مجانية لموقعك في أي مكان بالأحساء.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px; padding: 20px; border: 1px dashed #BF953F;">
+            <div style="font-size: 3rem; color: #BF953F; margin-bottom: 15px;">02</div>
+            <h3 style="margin-bottom: 10px;">التصميم والمقايسة</h3>
+            <p style="color: #ccc;">نقدم لك عرض سعر تفصيلي مع مقترحات تصميمية تناسب مساحتك وميزانيتك.</p>
+        </div>
+        <div style="flex: 1; min-width: 250px; padding: 20px; border: 1px dashed #BF953F;">
+            <div style="font-size: 3rem; color: #BF953F; margin-bottom: 15px;">03</div>
+            <h3 style="margin-bottom: 10px;">التنفيذ والإتقان</h3>
+            <p style="color: #ccc;">يبدأ فريقنا الفني بالعمل بأعلى معايير الجودة وتحت إشراف هندسي دقيق.</p>
+        </div>
+    </div>
+</section>
+<footer style="background: #0b0b0b; color: #fff; padding: 60px 20px 20px; border-top: 5px solid #BF953F; direction: rtl; font-family: sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+        
+        <div style="flex: 1; min-width: 300px;">
+            <img src="https://i.postimg.cc/1X9Q0jm3/1769972033960.png" alt="ظلال الأحساء" style="height: 90px; margin-bottom: 20px; background: #fff; padding: 5px; border-radius: 5px;">
+            <h3 style="color: #BF953F; margin: 0 0 15px; font-size: 1.5rem;">مؤسسة ظلال الأحساء</h3>
+            <p style="color: #aaa; line-height: 1.8; font-size: 0.95rem;">
+                الرائدون في عالم تنسيق الحدائق والمظلات والسواتر بالمنطقة الشرقية. نحن لا نبني مجرد ديكورات، نحن نصنع بيئة مريحة تليق بفخامة منزلك وبجودة تدوم لأجيال.
+            </p>
+        </div>
+
+        <div style="flex: 1; min-width: 200px;">
+            <h4 style="color: #BF953F; border-right: 3px solid #BF953F; padding-right: 15px; margin-bottom: 25px;">خدماتنا بالأحساء</h4>
+            <ul style="list-style: none; padding: 0; line-height: 2.2; color: #ccc;">
+                <li><i class="fas fa-check" style="color: #BF953F; margin-left: 10px;"></i>تنسيق حدائق منزلية</li>
+                <li><i class="fas fa-check" style="color: #BF953F; margin-left: 10px;"></i>تركيب شلالات ونوافر</li>
+                <li><i class="fas fa-check" style="color: #BF953F; margin-left: 10px;"></i>توريد عشب صناعي ملكي</li>
+                <li><i class="fas fa-check" style="color: #BF953F; margin-left: 10px;"></i>مظلات وسواتر وبرجولات</li>
+                <li><i class="fas fa-check" style="color: #BF953F; margin-left: 10px;"></i>هناجر وشبوك زراعية</li>
+            </ul>
+        </div>
+
+        <div style="flex: 1; min-width: 250px;">
+            <h4 style="color: #BF953F; border-right: 3px solid #BF953F; padding-right: 15px; margin-bottom: 25px;">تواصل مباشر</h4>
+            <div style="display: flex; flex-direction: column; gap: 15px;">
+                <p><i class="fas fa-map-marker-alt" style="color: #BF953F; margin-left: 10px;"></i> المملكة العربية السعودية - الأحساء</p>
+                <p><i class="fas fa-phone-alt" style="color: #BF953F; margin-left: 10px;"></i> <a href="tel:966544459478" style="color: #fff; text-decoration: none;">0544459478</a></p>
+                <p><i class="fab fa-whatsapp" style="color: #25D366; margin-left: 10px;"></i> <a href="https://wa.me/966544459478" style="color: #fff; text-decoration: none;">اطلب معاينة مجانية</a></p>
+            </div>
+            <div style="margin-top: 20px; display: flex; gap: 15px;">
+                <a href="#" style="color: #1a1a1a; background: #BF953F; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 50%;"><i class="fab fa-snapchat-ghost"></i></a>
+                <a href="#" style="color: #1a1a1a; background: #BF953F; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 50%;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="color: #1a1a1a; background: #BF953F; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 50%;"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="border-top: 1px solid #222; margin-top: 50px; padding-top: 20px; text-align: center; color: #555; font-size: 0.85rem;">
+        <p>جميع الحقوق محفوظة لمؤسسة <b>ظلال الأحساء</b> © 2026</p>
+        <p style="margin-top: 5px;">نخدمكم في الهفوف، المبرز، السلمانية، وكافة أنحاء المنطقة الشرقية</p>
+    </div>
+</footer>

@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ظلال الأحساء | تركيب قرميد وطني وإيطالي</title>
+    <link rel="icon" href="https://i.postimg.cc/1X9Q0jm3/1769972033960.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* الترويسة الذهبية */
+        .golden-header {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4D03F 50%, #D4AF37 100%);
+            padding: 10px 0;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+            position: relative;
+            z-index: 1001;
+            border-bottom: 2px solid #8B6914;
+            width: 100%;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo-title-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .logo-container {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 3px 10px rgba(139, 105, 20, 0.2);
+            overflow: hidden;
+        }
+        
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .site-title h1 {
+            color: #5D4037;
+            font-size: 1.6rem;
+            font-weight: 800;
+            margin-bottom: 3px;
+        }
+        
+        .site-title .tagline {
+            color: #8B6914;
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 3px 10px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+
+        .phone-icon {
+            width: 45px;
+            height: 45px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8B6914;
+            font-size: 1.2rem;
+            box-shadow: 0 3px 8px rgba(139, 105, 20, 0.2);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .phone-icon:hover {
+            transform: scale(1.1);
+            background: #f0f0f0;
+        }
+
+        /* شريط الأخبار المخصص */
+        .news-ticker-bar {
+            background: linear-gradient(90deg, #8B4513, #A0522D);
+            padding: 8px 0;
+            overflow: hidden;
+            border-bottom: 2px solid #D4AF37;
+            direction: ltr;
+            position: relative;
+            z-index: 1000;
+        }
+        
+        .ticker-wrapper {
+            display: flex;
+            white-space: nowrap;
+            width: max-content;
+            animation: ticker-move 70s linear infinite;
+        }
+        
+        .ticker-item {
+            display: flex;
+            align-items: center;
+            padding: 0 50px;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 900;
+            direction: rtl;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .highlight-gold {
+            color: #F4D03F;
+            margin: 0 8px;
+        }
+
+        @keyframes ticker-move {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0%); }
+        }
+
+        /* سلايدر الصفحة */
+        .slider-section {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            background: #000;
+            margin-bottom: 40px;
+        }
+
+        .slider-track {
+            display: flex;
+            width: 400%; /* 4 صور × 100% */
+            height: 100%;
+            transition: transform 0.8s ease-in-out;
+        }
+
+        .slide-box {
+            width: 25%; /* 100% ÷ 4 */
+            height: 100%;
+            position: relative;
+        }
+
+        .slide-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.85;
+        }
+
+        .slide-label {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            color: white;
+            background: rgba(139, 69, 19, 0.85);
+            padding: 15px 30px;
+            border-right: 5px solid #D4AF37;
+            border-radius: 5px;
+            z-index: 10;
+            max-width: 500px;
+        }
+
+        .slide-label h2 {
+            font-size: 2rem;
+            font-weight: 900;
+            margin: 0 0 8px 0;
+            color: #F4D03F;
+        }
+
+        .slide-label p {
+            font-size: 1.1rem;
+            margin: 0;
+            opacity: 0.9;
+        }
+
+        /* زر الرجوع */
+        .back-button {
+            display: inline-block;
+            background: #8B4513;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 700;
+            margin: 20px auto 40px;
+            transition: 0.3s;
+            border: 2px solid #D4AF37;
+            position: relative;
+            z-index: 100;
+            font-size: 1rem;
+        }
+
+        .back-button:hover {
+            background: #D4AF37;
+            color: #8B4513;
+            transform: translateY(-3px);
+        }
+
+        /* القسم التمهيدي */
+        .page-intro {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 3px solid #D4AF37;
+        }
+
+        .page-intro h2 {
+            color: #8B4513;
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .page-intro p {
+            color: #555;
+            font-size: 1.2rem;
+            max-width: 900px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #8B4513, #A0522D);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 30px auto 0;
+            border: 2px solid #D4AF37;
+        }
+
+        .highlight-box h3 {
+            color: #F4D03F;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* فلترة المعرض */
+        .gallery-filters {
+            text-align: center;
+            margin: 40px 0 30px;
+            padding: 0 20px;
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .filter-btn {
+            background: white;
+            border: 2px solid #8B4513;
+            color: #8B4513;
+            padding: 10px 25px;
+            border-radius: 25px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: #8B4513;
+            color: white;
+            border-color: #D4AF37;
+        }
+
+        /* معرض الصور */
+        .gallery-section {
+            padding: 40px 20px;
+            background: #f9f9f9;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #8B4513;
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 150px;
+            height: 4px;
+            background: #D4AF37;
+            display: block;
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+
+        /* شبكة الصور */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            border: 1px solid #eaeaea;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            border-color: #D4AF37;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gallery-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover .gallery-img img {
+            transform: scale(1.1);
+        }
+
+        .gallery-caption {
+            padding: 15px;
+            text-align: center;
+            background: white;
+        }
+
+        .gallery-caption h3 {
+            color: #8B4513;
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .gallery-caption p {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0;
+        }
+
+        /* زر تحميل المزيد */
+        .load-more-container {
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+
+        .load-more-btn {
+            background: #D4AF37;
+            color: #8B4513;
+            border: none;
+            padding: 14px 40px;
+            border-radius: 30px;
+            font-weight: 800;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .load-more-btn:hover {
+            background: #8B4513;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        /* قسم الخدمات */
+        .services-section {
+            background: white;
+            padding: 60px 20px;
+            border-top: 4px solid #D4AF37;
+            border-bottom: 4px solid #D4AF37;
+        }
+
+        .services-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .service-category {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border-right: 5px solid #8B4513;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .service-category h3 {
+            color: #8B4513;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #D4AF37;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .service-category h3 i {
+            color: #D4AF37;
+        }
+
+        .service-category ul {
+            list-style: none;
+            padding-right: 20px;
+        }
+
+        .service-category li {
+            padding: 12px 0;
+            font-size: 1.1rem;
+            color: #444;
+            position: relative;
+            line-height: 1.7;
+        }
+
+        .service-category li::before {
+            content: '✓';
+            color: #D4AF37;
+            font-weight: bold;
+            margin-left: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* قسم المزايا */
+        .features-section {
+            background: linear-gradient(135deg, #8B4513 0%, #A0522D 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+        }
+
+        .feature-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: all 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #D4AF37;
+        }
+
+        .feature-box i {
+            font-size: 2.5rem;
+            color: #D4AF37;
+            margin-bottom: 20px;
+        }
+
+        .feature-box h4 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #F4D03F;
+        }
+
+        /* قسم التواصل */
+        .contact-section {
+            background: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #8B4513;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 35px;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #8B4513;
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            border-radius: 45px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            border: 2px solid transparent;
+        }
+
+        .contact-btn:hover {
+            background: #D4AF37;
+            color: #8B4513;
+            transform: translateY(-5px);
+            border-color: #8B4513;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .contact-btn i {
+            font-size: 1.4rem;
+        }
+
+        .contact-btn.whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        /* أزرار التواصل العائمة */
+        .sticky-contact {
+            position: fixed;
+            left: 20px;
+            bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 9999;
+        }
+
+        .btn-float {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn { 
+            background-color: #25D366; 
+            animation: pulse-green 2s infinite; 
+        }
+        
+        .call-btn { 
+            background-color: #D4AF37; 
+        }
+
+        .btn-float:hover { 
+            transform: scale(1.12) rotate(5deg);
+        }
+
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        /* التذييل */
+        .main-footer {
+            background-color: #8B4513;
+            color: #ffffff;
+            padding: 50px 20px 15px;
+            border-top: 4px solid #D4AF37;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-section h3 {
+            color: #D4AF37;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icon:hover {
+            background: #D4AF37;
+            color: #8B4513;
+            transform: translateY(-5px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        /* الموبايل */
+        @media (max-width: 768px) {
+            .ticker-item { 
+                font-size: 1.3rem;
+                padding: 0 25px;
+            }
+            .site-title h1 { 
+                font-size: 1.2rem;
+            }
+            .logo-container {
+                width: 50px;
+                height: 50px;
+            }
+            .phone-icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            .slider-section { 
+                height: 350px;
+            }
+            .slide-label h2 { 
+                font-size: 1.5rem;
+            }
+            .slide-label p {
+                font-size: 0.9rem;
+            }
+            .slide-label { 
+                bottom: 20px; 
+                right: 20px; 
+                padding: 12px 20px;
+                max-width: 300px;
+            }
+            .page-intro h2 {
+                font-size: 2rem;
+            }
+            .section-title { 
+                font-size: 2rem;
+            }
+            .gallery-grid { 
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 12px;
+            }
+            .gallery-img {
+                height: 160px;
+            }
+            .gallery-caption h3 {
+                font-size: 1rem;
+            }
+            .filter-buttons {
+                gap: 8px;
+            }
+            .filter-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+            .contact-buttons { 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 15px;
+            }
+            .contact-btn { 
+                width: 100%; 
+                max-width: 300px;
+                padding: 15px 25px;
+                font-size: 1.1rem;
+            }
+            .btn-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- الترويسة الذهبية -->
+    <header class="golden-header">
+        <div class="header-container">
+            <div class="logo-title-section">
+                <div class="logo-container">
+                    <img src="https://i.postimg.cc/1X9Q0jm3/1769972033960.png" alt="شعار ظلال الأحساء">
+                </div>
+                <div class="site-title">
+                    <h1>ظلال الأحساء لتركيب القرميد</h1>
+                    <span class="tagline">فخامة الطين.. جمال السقف</span>
+                </div>
+            </div>
+            <div class="contact-simple">
+                <a href="tel:0544459478" class="phone-icon" title="اتصل الآن">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- شريط الأخبار المخصص للقرميد -->
+    <section class="news-ticker-bar">
+        <div class="ticker-wrapper">
+            <div class="ticker-item">
+                <span class="highlight-gold">متخصصون في تركيب القرميد الوطني والإيطالي</span>.. جودة لا تنافس 🏠
+            </div>
+            
+            <div class="ticker-item">
+                نقدم <span class="highlight-gold">أفخم أنواع القرميد للسقف والواجهات</span> بتصاميم عصرية وكلاسيكية ✨
+            </div>
+
+            <div class="ticker-item">
+                <span class="highlight-gold">قرميد مقاوم لعوامل الطقس</span>.. عمر افتراضي يصل إلى 50 عام ⛈️
+            </div>
+
+            <div class="ticker-item">
+                📞 تواصل معنا: <span class="highlight-gold">0544459478</span>.. لاستشارة مجانية 📞
+            </div>
+            
+            <div class="ticker-item">
+                <span class="highlight-gold">ظلال الأحساء</span>.. خبرة 10+ سنوات في تركيب القرميد 🏆
+            </div>
+        </div>
+    </section>
+
+    <!-- سلايدر الصفحة الرئيسي -->
+    <section class="slider-section">
+        <div class="slider-track" id="sliderTrack">
+            <div class="slide-box">
+                <img src="https://i.postimg.cc/SsRTVqZQ/5447603825691790818-121.jpg" alt="قرميد واجهات فاخر">
+                <div class="slide-label">
+                    <h2>قرميد واجهات فاخر</h2>
+                    <p>تركيب قرميد إيطالي ووطني لواجهات الفلل والقصور بتصاميم مميزة</p>
+                </div>
+            </div>
+            <div class="slide-box">
+                <img src="https://i.postimg.cc/PxJ3Kh6q/5447603825691790819-121.jpg" alt="قرميد أسقف تقليدي">
+                <div class="slide-label">
+                    <h2>قرميد أسقف تقليدي</h2>
+                    <p>تركيب قرميد تقليدي للأسقف بمقاسات وألوان متنوعة تناسب جميع الأذواق</p>
+                </div>
+            </div>
+            <div class="slide-box">
+                <img src="https://i.postimg.cc/wvMfFHWd/5447603825691790820-121.jpg" alt="قرميد عزل حراري">
+                <div class="slide-label">
+                    <h2>قرميد عزل حراري</h2>
+                    <p>أنظمة قرميد معزولة حرارياً تخفض درجة الحرارة داخل المنزل بمقدار 8-10 درجات</p>
+                </div>
+            </div>
+            <div class="slide-box">
+                <img src="https://i.postimg.cc/B6bYNsh0/5447603825691790821-121.jpg" alt="تفاصيل تركيب القرميد">
+                <div class="slide-label">
+                    <h2>تفاصيل تركيب القرميد</h2>
+                    <p>تنفيذ دقيق لتفاصيل تركيب القرميد مع ضمان عدم تسرب المياه والعوامل الجوية</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- زر الرجوع للرئيسية -->
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center;">
+        <a href="index.html" class="back-button">
+            <i class="fas fa-arrow-right"></i> الرجوع للصفحة الرئيسية
+        </a>
+    </div>
+
+    <!-- مقدمة الصفحة -->
+    <section class="page-intro">
+        <h2>ظلال الأحساء لتركيب القرميد الوطني والإيطالي</h2>
+        <p>نحن رواد في تركيب القرميد الفاخر للأسقف والواجهات في المنطقة الشرقية والأحساء. بخبرة تزيد عن عقد من الزمن، نقدم حلولاً جمالية وعملية تجمع بين الأصالة التراثية والتصاميم العصرية، مع ضمان الجودة والمتانة.</p>
+        
+        <div class="highlight-box">
+            <h3>📊 أرقام تتحدث عن جودتنا:</h3>
+            <p>أكثر من <strong>300 مشروع</strong> منجز • <strong>10+ سنوات</strong> خبرة • مقاومة <strong>للرياح حتى 120 كم/ساعة</strong> • ضمان يصل إلى <strong>20 سنة</strong> على التركيب</p>
+        </div>
+    </section>
+
+    <!-- فلترة المعرض -->
+    <div class="gallery-filters">
+        <h3 style="color: #8B4513; text-align: center; margin-bottom: 15px; font-size: 1.3rem;">تصفية معرض الأعمال:</h3>
+        <div class="filter-buttons" id="filterButtons">
+            <button class="filter-btn active" data-filter="all">الكل (8 صور)</button>
+            <!-- سيتم إضافة أزرار التصفية ديناميكياً عبر JavaScript -->
+        </div>
+    </div>
+
+    <!-- معرض الصور الكامل -->
+    <section class="gallery-section">
+        <h2 class="section-title">معرض مشاريعنا في تركيب القرميد</h2>
+        
+        <div class="gallery-grid" id="galleryContainer">
+            <!-- سيتم إضافة جميع الصور هنا عبر JavaScript -->
+        </div>
+
+        <div class="load-more-container">
+            <button class="load-more-btn" id="loadMoreBtn">
+                <i class="fas fa-plus"></i> تحميل المزيد من الصور
+            </button>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section class="services-section">
+        <div class="services-container">
+            <h2 style="text-align: center; color: #8B4513; font-size: 2.5rem; margin-bottom: 50px;">خدماتنا المتكاملة</h2>
+            
+            <div class="service-category">
+                <h3><i class="fas fa-home"></i> تركيب قرميد الأسقف والواجهات</h3>
+                <ul>
+                    <li>تركيب قرميد إيطالي عالي الجودة بمواصفات مقاومة للعوامل الجوية</li>
+                    <li>تركيب قرميد وطني (سعودي) بتصاميم تقليدية وعصرية</li>
+                    <li>تركيب قرميد للواجهات الخارجية للفلل والقصور والمباني التجارية</li>
+                    <li>تصميم وتنفيذ أسقف قرميدية بمختلف الأشكال (مثلثة، مستطيلة، مقوسة)</li>
+                    <li>تركيب قرميد معزول حرارياً يخفض درجة الحرارة داخل المنزل</li>
+                    <li>تحديث واستبدال القرميد القديم بأنظمة حديثة أكثر كفاءة</li>
+                    <li>تركيب أنظمة تصريف مياه متكاملة مع القرميد</li>
+                </ul>
+            </div>
+
+            <div class="service-category">
+                <h3><i class="fas fa-tools"></i> خدمات الصيانة والإصلاح</h3>
+                <ul>
+                    <li>صيانة دورية للقرميد وتنظيفه من الأتربة والأوساخ</li>
+                    <li>إصلاح وتغيير القرميد المتضرر أو المكسور</li>
+                    <li>معالجة تسربات المياه في الأسقف القرميدية</li>
+                    <li>تثبيت القرميد المفكوك وإعادة تركيب الأجزاء المتحركة</li>
+                    <li>طلاء وتلميع القرميد لاستعادة لمعانه وجماله</li>
+                    <li>تركيب شبكات حماية للقرميد من الطيور والحشرات</li>
+                    <li>فحص شامل لنظام القرميد وكتابة تقرير مفصل عن حالته</li>
+                </ul>
+            </div>
+
+            <div class="service-category">
+                <h3><i class="fas fa-clipboard-check"></i> استشارات وتصاميم مخصصة</h3>
+                <ul>
+                    <li>استشارات مجانية لاختيار نوع القرميد المناسب لمنزلك</li>
+                    <li>تصاميم ثلاثية الأبعاد للأسقف والواجهات قبل التنفيذ</li>
+                    <li>تقدير تكاليف دقيق وشامل لجميع مراحل المشروع</li>
+                    <li>توفير عينات حقيقية من القرميد للاختيار منها</li>
+                    <li>تصميم أنماط وأشكال فنية باستخدام القرميد متعدد الألوان</li>
+                    <li>تنسيق القرميد مع باقي عناصر الديكور الخارجي للمنزل</li>
+                    <li>خدمة ما بعد البيع ومتابعة دورية للمشاريع المنفذة</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المزايا -->
+    <section class="features-section">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #F4D03F;">لماذا تختار ظلال الأحساء للقرميد؟</h2>
+        <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto 40px; opacity: 0.9;">نحن نتميز بعناصر الجودة والاحترافية التي تجعلنا الخيار الأول في المنطقة</p>
+        
+        <div class="features-grid">
+            <div class="feature-box">
+                <i class="fas fa-award"></i>
+                <h4>مواد أصلية مضمونة</h4>
+                <p>نستخدم قرميد إيطالي ووطني أصلي مع شهادات ضمان من المصانع العالمية</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-user-hard-hat"></i>
+                <h4>فنيون متخصصون</h4>
+                <p>فريق تركيب مدرب على أحدث التقنيات وذو خبرة طويلة في أعمال القرميد</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-shield-alt"></i>
+                <h4>ضمان طويل الأمد</h4>
+                <p>نقدم ضماناً يصل إلى 20 سنة على التركيب و10 سنوات على المواد</p>
+            </div>
+            <div class="feature-box">
+                <i class="fas fa-bolt"></i>
+                <h4>سرعة في التنفيذ</h4>
+                <p>نلتزم بمواعيد التسليم وننهي المشاريع في الوقت المتفق عليه</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل -->
+    <section class="contact-section">
+        <h2>جاهزون لتغطية سقف منزلك بالفخامة؟</h2>
+        <p style="font-size: 1.3rem; max-width: 800px; margin: 0 auto 25px; color: #555;">
+            تواصل معنا الآن للحصول على استشارة مجانية وتصميم مبدئي وتقدير سعر دقيق لمشروع القرميد الخاص بك
+        </p>
+        
+        <div class="contact-buttons">
+            <a href="tel:0544459478" class="contact-btn">
+                <i class="fas fa-phone-alt"></i> اتصل الآن: 0544459478
+            </a>
+            <a href="https://wa.me/966544459478" class="contact-btn whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> واتساب: 966544459478
+            </a>
+            <a href="mailto:info@example.com" class="contact-btn">
+                <i class="fas fa-envelope"></i> البريد الإلكتروني
+            </a>
+        </div>
+    </section>
+
+    <!-- التذييل -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            
+            <div class="footer-section">
+                <img src="https://i.postimg.cc/1X9Q0jm3/1769972033960.png" alt="شعار ظلال الأحساء" style="width: 90px; margin-bottom: 15px;">
+                <h3>ظلال الأحساء للقرميد</h3>
+                <p style="font-size: 0.95rem;">الخبرة والجودة في تركيب القرميد الإيطالي والوطني. نضمن لكم سقفاً فاخراً يدوم لعقود.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>تواصل معنا</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 0.95rem;">
+                        <i class="fas fa-phone-alt" style="color: #D4AF37;"></i> 0544459478
+                    </li>
+                    <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 0.95rem;">
+                        <i class="fab fa-whatsapp" style="color: #D4AF37;"></i> 966544459478
+                    </li>
+                    <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 0.95rem;">
+                        <i class="fas fa-map-marker-alt" style="color: #D4AF37;"></i> الأحساء، المنطقة الشرقية
+                    </li>
+                    <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 10px; font-size: 0.95rem;">
+                        <i class="fas fa-envelope" style="color: #D4AF37;"></i> info@zilal-alahsa.com
+                    </li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://www.tiktok.com/@ahsa.shades" class="social-icon" target="_blank" title="تيك توك">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.instagram.com/al_ahsa_mizalaat" class="social-icon" target="_blank" title="انستقرام">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/solomons456" class="social-icon" target="_blank" title="تويتر">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/17bH96Jg11/" class="social-icon" target="_blank" title="فيسبوك">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>موقعنا في الأحساء</h3>
+                <div class="map-container" style="border-radius: 8px; overflow: hidden; border: 2px solid #D4AF37; height: 180px;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115160.28253165381!2d49.567117!3d25.378774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e37968511111111%3A0x1111111111111111!2z2KfZhNij2K3Ys9in2KE!5e0!3m2!1sar!2ssa!4v1700000000000" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" title="خريطة موقع ظلال الأحساء">
+                    </iframe>
+                </div>
+                <p style="margin-top: 10px; font-size: 0.9rem;">نخدم كافة مناطق الأحساء والمنطقة الشرقية</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 جميع الحقوق محفوظة لمؤسسة <strong>ظلال الأحساء لتركيب القرميد</strong> - صُمم بكل فخر في هجر</p>
+        </div>
+    </footer>
+
+    <!-- أزرار التواصل العائمة -->
+    <div class="sticky-contact">
+        <a href="https://wa.me/966544459478" class="btn-float whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:0544459478" class="btn-float call-btn">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript للصفحة -->
+    <script>
+        // بيانات الصور (8 صور مرتبة في 4 مجموعات)
+        const allImages = [
+            // المجموعة 1: قرميد واجهات
+            {src: "https://i.postimg.cc/SsRTVqZQ/5447603825691790818-121.jpg", category: "قرميد-واجهات", title: "قرميد واجهات فاخر", desc: "تصميم إيطالي راقي"},
+            {src: "https://i.postimg.cc/fLy25ZH3/5447603825691790814-119.jpg", category: "قرميد-واجهات", title: "واجهة قرميد حديثة", desc: "لمسة عصرية"},
+            
+            // المجموعة 2: قرميد أسقف
+            {src: "https://i.postimg.cc/PxJ3Kh6q/5447603825691790819-121.jpg", category: "قرميد-أسقف", title: "سقف قرميد تقليدي", desc: "أصالة وتراث"},
+            {src: "https://i.postimg.cc/FRzWGmPY/5447603825691790814-121.jpg", category: "قرميد-أسقف", title: "أسقف قرميد متعددة", desc: "تنوع في التصميم"},
+            
+            // المجموعة 3: تفاصيل تركيب
+            {src: "https://i.postimg.cc/wvMfFHWd/5447603825691790820-121.jpg", category: "تفاصيل-تركيب", title: "عزل حراري للقرميد", desc: "تقنية متطورة"},
+            {src: "https://i.postimg.cc/B6bYNsh0/5447603825691790821-121.jpg", category: "تفاصيل-تركيب", title: "تركيب دقيق للقرميد", desc: "إتقان في العمل"},
+            
+            // المجموعة 4: مشاريع منجزة
+            {src: "https://i.postimg.cc/XJqHx32M/5447603825691790822-121.jpg", category: "مشاريع-منجزة", title: "مشروع قرميد منجز", desc: "تسليم العميل"},
+            {src: "https://i.postimg.cc/ydxQnBfC/5447603825691790825-121.jpg", category: "مشاريع-منجزة", title: "قرميد فيلا فاخرة", desc: "تصميم احترافي"}
+        ];
+
+        // استخراج التصنيفات الفريدة من الصور
+        const categories = [...new Set(allImages.map(img => img.category))];
+        const filterButtonsContainer = document.getElementById('filterButtons');
+        const galleryContainer = document.getElementById('galleryContainer');
+        const loadMoreBtn = document.getElementById('loadMoreBtn');
+        
+        let currentFilter = 'all';
+        let visibleCount = 8;
+        
+        // إنشاء أزرار التصفية ديناميكياً
+        categories.forEach(category => {
+            const count = allImages.filter(img => img.category === category).length;
+            const button = document.createElement('button');
+            button.className = 'filter-btn';
+            button.dataset.filter = category;
+            button.textContent = `${category} (${count} صور)`;
+            filterButtonsContainer.appendChild(button);
+        });
+        
+        // دالة لعرض الصور
+        function displayImages() {
+            galleryContainer.innerHTML = '';
+            const filteredImages = currentFilter === 'all' 
+                ? allImages 
+                : allImages.filter(img => img.category === currentFilter);
+            
+            const imagesToShow = filteredImages.slice(0, visibleCount);
+            
+            imagesToShow.forEach(image => {
+                const item = document.createElement('div');
+                item.className = 'gallery-item';
+                item.dataset.category = image.category;
+                item.innerHTML = `
+                    <div class="gallery-img">
+                        <img src="${image.src}" alt="${image.title}" loading="lazy">
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>${image.title}</h3>
+                        <p>${image.desc}</p>
+                    </div>
+                `;
+                galleryContainer.appendChild(item);
+            });
+            
+            // تحديث زر تحميل المزيد
+            if (visibleCount >= filteredImages.length) {
+                loadMoreBtn.style.display = 'none';
+            } else {
+                loadMoreBtn.style.display = 'inline-flex';
+                loadMoreBtn.innerHTML = `<i class="fas fa-plus"></i> تحميل المزيد (${filteredImages.length - visibleCount} صور متبقية)`;
+            }
+        }
+        
+        // أحداث أزرار التصفية
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+                currentFilter = this.dataset.filter;
+                visibleCount = 8;
+                displayImages();
+            });
+        });
+        
+        // حدث زر تحميل المزيد
+        loadMoreBtn.addEventListener('click', () => {
+            visibleCount += 8;
+            displayImages();
+        });
+        
+        // السلايدر التلقائي
+        const track = document.getElementById('sliderTrack');
+        let currentSlide = 0;
+        
+        function moveSlider() {
+            currentSlide++;
+            if (currentSlide >= 4) currentSlide = 0;
+            track.style.transform = `translateX(${currentSlide * 25}%)`;
+        }
+        
+        setInterval(moveSlider, 5000);
+        window.addEventListener('load', function() {
+            track.style.transition = 'transform 0.8s ease-in-out';
+        });
+        
+        // تهيئة الصفحة
+        document.addEventListener('DOMContentLoaded', () => {
+            displayImages();
+        });
+    </script>
+
+</body>
+</html>
