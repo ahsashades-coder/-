@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="J6n4AtufRPJCbiqfmIJF6tFeOMDz90MNKz2UwS03i4U" />
     <title>ظلال الأحساء للخيام والمظلات</title>
+    <meta name="description" content="ظلال الأحساء للخيام والمظلات - أفضل شركة تركيب مظلات، سواتر، خيام، هناجر، برجولات، تنسيق حدائق، قرميد، ديكورات في الأحساء والمنطقة الشرقية">
+    <meta name="keywords" content="ظلال الأحساء, مظلات الأحساء, خيام الأحساء, سواتر الأحساء, هناجر الأحساء, برجولات الأحساء, تنسيق حدائق الأحساء, قرميد الأحساء, ديكورات الأحساء, الأحساء, الهفوف, المبرز">
+    
     <link rel="icon" href="https://i.postimg.cc/1X9Q0jm3/1769972033960.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -22,6 +25,43 @@
             background-color: #f8f9fa;
             color: #333;
             overflow-x: hidden;
+        }
+        
+        /* ========== شريط الكلمات المفتاحية العلوي ========== */
+        .top-keywords-bar {
+            background: linear-gradient(90deg, #0a1d37, #1a3d6d);
+            padding: 8px 0;
+            overflow: hidden;
+            border-bottom: 2px solid #D4AF37;
+            direction: ltr; /* لعكس اتجاه الحركة */
+            position: relative;
+            z-index: 1002;
+        }
+
+        .keywords-marquee {
+            white-space: nowrap;
+            display: inline-block;
+            animation: keywordsScroll 35s linear infinite;
+        }
+
+        .keyword-item {
+            display: inline-block;
+            color: #D4AF37;
+            font-size: 11px;
+            margin: 0 18px;
+            font-weight: bold;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .keyword-item:before {
+            content: "•";
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        @keyframes keywordsScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
         
         /* الترويسة الذهبية */
@@ -148,10 +188,267 @@
             .news-ticker-bar { padding: 6px 0; }
             .site-title h1 { font-size: 1.4rem; }
             .ticker-wrapper { animation-duration: 40s; }
+            .keyword-item { font-size: 9px; margin: 0 12px; }
+        }
+        
+        /* ========== سحابة الكلمات المفتاحية بعد الأقسام ========== */
+        .keywords-after-sections {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 40px 20px;
+            border-top: 3px solid #D4AF37;
+            border-bottom: 3px solid #1A472A;
+            margin: 20px 0;
+        }
+
+        .keywords-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .keywords-title {
+            text-align: center;
+            color: #1A472A;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            font-weight: 900;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .keywords-title::after {
+            content: '';
+            width: 80px;
+            height: 3px;
+            background: #D4AF37;
+            display: block;
+            margin: 10px auto;
+            border-radius: 2px;
+        }
+
+        .keywords-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .keyword-tag {
+            background: white;
+            border: 2px solid #e8e8e8;
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #1A472A;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+            font-weight: 600;
+        }
+
+        .keyword-tag:hover {
+            background: #D4AF37;
+            color: white;
+            border-color: #D4AF37;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        /* تصميم السلايدر */
+        .slider-section {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            background: #000;
+        }
+
+        .slider-track {
+            display: flex;
+            width: 800%; /* عدد الصور (8) * 100 */
+            height: 100%;
+            transition: transform 0.8s ease-in-out;
+        }
+
+        .slide-box {
+            width: 12.5%; /* 100% ÷ 8 */
+            height: 100%;
+            position: relative;
+        }
+
+        .slide-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+
+        .slide-label {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            color: white;
+            background: rgba(26, 71, 42, 0.85);
+            padding: 15px 35px;
+            border-right: 8px solid #D4AF37;
+            border-radius: 5px;
+            z-index: 10;
+        }
+
+        .slide-label h2 {
+            font-size: 2.2rem;
+            font-weight: 900;
+            margin: 0;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        /* أزرار التواصل العائمة */
+        .sticky-contact {
+            position: fixed;
+            left: 20px;
+            bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 9999;
+        }
+
+        .btn-float {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: 0.3s;
+        }
+
+        .whatsapp-btn { background-color: #25D366; animation: pulse-green 2s infinite; }
+        .call-btn { background-color: #D4AF37; }
+
+        .btn-float:hover { transform: scale(1.1) rotate(5deg); }
+
+        @keyframes pulse-green {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+
+        @media (max-width: 768px) {
+            .slider-section { height: 350px; }
+            .slide-label h2 { font-size: 1.4rem; }
+            .slide-label { bottom: 20px; right: 20px; padding: 10px 20px; }
         }
     </style>
 </head>
 <body>
+
+    <!-- ========== شريط الكلمات المفتاحية العلوي ========== -->
+    <div class="top-keywords-bar">
+        <div class="keywords-marquee">
+            <span class="keyword-item">ظلال الأحساء</span>
+            <span class="keyword-item">مظلات الأحساء</span>
+            <span class="keyword-item">خيام الأحساء</span>
+            <span class="keyword-item">سواتر الأحساء</span>
+            <span class="keyword-item">هناجر الأحساء</span>
+            <span class="keyword-item">برجولات الأحساء</span>
+            <span class="keyword-item">تنسيق حدائق الأحساء</span>
+            <span class="keyword-item">قرميد الأحساء</span>
+            <span class="keyword-item">ديكورات الأحساء</span>
+            <span class="keyword-item">مظلات الهفوف</span>
+            <span class="keyword-item">سواتر المبرز</span>
+            <span class="keyword-item">خيام ملكية</span>
+            <span class="keyword-item">بيوت شعر</span>
+            <span class="keyword-item">هناجر شينكو</span>
+            <span class="keyword-item">مستودعات</span>
+            <span class="keyword-item">برجولات خشبية</span>
+            <span class="keyword-item">تنسيق حدائق منزلية</span>
+            <span class="keyword-item">عشب صناعي</span>
+            <span class="keyword-item">قرميد إسباني</span>
+            <span class="keyword-item">ديكورات خارجية</span>
+            <span class="keyword-item">بديل خشب</span>
+            <span class="keyword-item">مظلات سيارات</span>
+            <span class="keyword-item">سواتر حديد ليزر</span>
+            <span class="keyword-item">خيام تخييم</span>
+            <span class="keyword-item">بيوت شعر أفراح</span>
+            <span class="keyword-item">هناجر زراعية</span>
+            <span class="keyword-item">مستودعات صناعية</span>
+            <span class="keyword-item">برجولات حديد</span>
+            <span class="keyword-item">حدائق عمودية</span>
+            <span class="keyword-item">نوافير وشلالات</span>
+            <span class="keyword-item">قرميد إيطالي</span>
+            <span class="keyword-item">ديكورات حجرية</span>
+            <span class="keyword-item">بديل الرخام</span>
+            <span class="keyword-item">مظلات قماشية</span>
+            <span class="keyword-item">سواتر بلاستيك</span>
+            <span class="keyword-item">خيام سيارات</span>
+            <span class="keyword-item">بيوت شعر تراثية</span>
+            <span class="keyword-item">هناجر تجارية</span>
+            <span class="keyword-item">مستودعات تخزين</span>
+            <span class="keyword-item">برجولات مظللة</span>
+            <span class="keyword-item">تنسيق نباتي</span>
+            <span class="keyword-item">عشب طبيعي</span>
+            <span class="keyword-item">قرميد معدني</span>
+            <span class="keyword-item">ديكورات واجهات</span>
+            <span class="keyword-item">تركيب مظلات</span>
+            <span class="keyword-item">تركيب سواتر</span>
+            <span class="keyword-item">تركيب خيام</span>
+            <span class="keyword-item">بناء هناجر</span>
+            <span class="keyword-item">تصميم حدائق</span>
+            <span class="keyword-item">تركيب قرميد</span>
+            <span class="keyword-item">تشطيب ديكورات</span>
+            <span class="keyword-item">مظلات هرمية</span>
+            <span class="keyword-item">سواتر خشبية</span>
+            <span class="keyword-item">خيام مناسبات</span>
+            <span class="keyword-item">بيوت شعر فخمة</span>
+            <span class="keyword-item">هناجر كبيرة</span>
+            <span class="keyword-item">مستودعات ضخمة</span>
+            <span class="keyword-item">برجولات حديثة</span>
+            <span class="keyword-item">تنسيق خارجي</span>
+            <span class="keyword-item">عشب صناعي حدائق</span>
+            <span class="keyword-item">قرميد فخاري</span>
+            <span class="keyword-item">ديكورات سيراميك</span>
+            <span class="keyword-item">بديل السيراميك</span>
+            <span class="keyword-item">مظلات مواقف</span>
+            <span class="keyword-item">سواتر خصوصية</span>
+            <span class="keyword-item">خيام مؤقتة</span>
+            <span class="keyword-item">بيوت شعر ملكية</span>
+            <span class="keyword-item">هناجر معزولة</span>
+            <span class="keyword-item">مستودعات مبردة</span>
+            <span class="keyword-item">برجولات جلسات</span>
+            <span class="keyword-item">تنسيق مسابح</span>
+            <span class="keyword-item">عشب صناعي ملعب</span>
+            <span class="keyword-item">قرميد سقوف</span>
+            <span class="keyword-item">ديكورات داخلية</span>
+            <span class="keyword-item">تشطيب خارجي</span>
+            <span class="keyword-item">مظلات مخروطية</span>
+            <span class="keyword-item">سواتر معدنية</span>
+            <span class="keyword-item">خيام احتفالات</span>
+            <span class="keyword-item">بيوت شعر حديثة</span>
+            <span class="keyword-item">هناجر سريعة</span>
+            <span class="keyword-item">مستودعات أمنة</span>
+            <span class="keyword-item">برجولات أسطح</span>
+            <span class="keyword-item">تنسيق فناء</span>
+            <span class="keyword-item">عشب صناعي ملاعب</span>
+            <span class="keyword-item">قرميد وطني</span>
+            <span class="keyword-item">ديكورات جبسية</span>
+            <span class="keyword-item">تشطيب واجهات</span>
+            <span class="keyword-item">مظلات مساجد</span>
+            <span class="keyword-item">سواتر مدارس</span>
+            <span class="keyword-item">خيام معارض</span>
+            <span class="keyword-item">بيوت شعر أعراس</span>
+            <span class="keyword-item">هناجر مستودعات</span>
+            <span class="keyword-item">مستودعات مشاريع</span>
+            <span class="keyword-item">برجولات استراحات</span>
+            <span class="keyword-item">تنسيق منتجعات</span>
+            <span class="keyword-item">عشب صناعي ملاعب</span>
+        </div>
+    </div>
 
     <header class="golden-header">
         <div class="header-container">
@@ -203,100 +500,6 @@
             </div>
         </div>
     </section>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<style>
-    /* تصميم السلايدر */
-    .slider-section {
-        width: 100%;
-        height: 500px;
-        position: relative;
-        overflow: hidden;
-        background: #000;
-    }
-
-    .slider-track {
-        display: flex;
-        width: 800%; /* عدد الصور (8) * 100 */
-        height: 100%;
-        transition: transform 0.8s ease-in-out;
-    }
-
-    .slide-box {
-        width: 12.5%; /* 100% ÷ 8 */
-        height: 100%;
-        position: relative;
-    }
-
-    .slide-box img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.8;
-    }
-
-    .slide-label {
-        position: absolute;
-        bottom: 40px;
-        right: 40px;
-        color: white;
-        background: rgba(26, 71, 42, 0.85);
-        padding: 15px 35px;
-        border-right: 8px solid #D4AF37;
-        border-radius: 5px;
-        z-index: 10;
-    }
-
-    .slide-label h2 {
-        font-size: 2.2rem;
-        font-weight: 900;
-        margin: 0;
-        font-family: 'Tajawal', sans-serif;
-    }
-
-    /* أزرار التواصل العائمة */
-    .sticky-contact {
-        position: fixed;
-        left: 20px;
-        bottom: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        z-index: 9999;
-    }
-
-    .btn-float {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 28px;
-        color: white;
-        text-decoration: none;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        transition: 0.3s;
-    }
-
-    .whatsapp-btn { background-color: #25D366; animation: pulse-green 2s infinite; }
-    .call-btn { background-color: #D4AF37; }
-
-    .btn-float:hover { transform: scale(1.1) rotate(5deg); }
-
-    @keyframes pulse-green {
-        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-        70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
-        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-    }
-
-    @media (max-width: 768px) {
-        .slider-section { height: 350px; }
-        .slide-label h2 { font-size: 1.4rem; }
-        .slide-label { bottom: 20px; right: 20px; padding: 10px 20px; }
-    }
-</style>
 
 <section class="slider-section">
     <div class="slider-track" id="sliderTrack">
@@ -593,6 +796,110 @@
     </div>
 </section>
 
+<!-- ========== سحابة الكلمات المفتاحية بعد الأقسام ========== -->
+<section class="keywords-after-sections">
+    <div class="keywords-container">
+        <h3 class="keywords-title">كلمات مفتاحية لتسهيل البحث عن خدماتنا في الأحساء</h3>
+        <div class="keywords-cloud">
+            <a href="hanajir.html" class="keyword-tag">هناجر الأحساء</a>
+            <a href="mazallat.html" class="keyword-tag">مظلات الأحساء</a>
+            <a href="khayam.html" class="keyword-tag">خيام الأحساء</a>
+            <a href="sawater.html" class="keyword-tag">سواتر الأحساء</a>
+            <a href="barjolat.html" class="keyword-tag">برجولات الأحساء</a>
+            <a href="gardens.html" class="keyword-tag">تنسيق حدائق الأحساء</a>
+            <a href="qarmid.html" class="keyword-tag">قرميد الأحساء</a>
+            <a href="decor.html" class="keyword-tag">ديكورات الأحساء</a>
+            <a href="mazallat.html" class="keyword-tag">مظلات الهفوف</a>
+            <a href="sawater.html" class="keyword-tag">سواتر المبرز</a>
+            <a href="khayam.html" class="keyword-tag">خيام ملكية</a>
+            <a href="khayam.html" class="keyword-tag">بيوت شعر</a>
+            <a href="hanajir.html" class="keyword-tag">هناجر شينكو</a>
+            <a href="hanajir.html" class="keyword-tag">مستودعات</a>
+            <a href="barjolat.html" class="keyword-tag">برجولات خشبية</a>
+            <a href="gardens.html" class="keyword-tag">تنسيق حدائق منزلية</a>
+            <a href="gardens.html" class="keyword-tag">عشب صناعي</a>
+            <a href="qarmid.html" class="keyword-tag">قرميد إسباني</a>
+            <a href="decor.html" class="keyword-tag">ديكورات خارجية</a>
+            <a href="decor.html" class="keyword-tag">بديل خشب</a>
+            <a href="mazallat.html" class="keyword-tag">مظلات سيارات</a>
+            <a href="sawater.html" class="keyword-tag">سواتر حديد ليزر</a>
+            <a href="khayam.html" class="keyword-tag">خيام تخييم</a>
+            <a href="khayam.html" class="keyword-tag">بيوت شعر أفراح</a>
+            <a href="hanajir.html" class="keyword-tag">هناجر زراعية</a>
+            <a href="hanajir.html" class="keyword-tag">مستودعات صناعية</a>
+            <a href="barjolat.html" class="keyword-tag">برجولات حديد</a>
+            <a href="gardens.html" class="keyword-tag">حدائق عمودية</a>
+            <a href="gardens.html" class="keyword-tag">نوافير وشلالات</a>
+            <a href="qarmid.html" class="keyword-tag">قرميد إيطالي</a>
+            <a href="decor.html" class="keyword-tag">ديكورات حجرية</a>
+            <a href="decor.html" class="keyword-tag">بديل الرخام</a>
+            <a href="mazallat.html" class="keyword-tag">مظلات قماشية</a>
+            <a href="sawater.html" class="keyword-tag">سواتر بلاستيك</a>
+            <a href="khayam.html" class="keyword-tag">خيام سيارات</a>
+            <a href="khayam.html" class="keyword-tag">بيوت شعر تراثية</a>
+            <a href="hanajir.html" class="keyword-tag">هناجر تجارية</a>
+            <a href="hanajir.html" class="keyword-tag">مستودعات تخزين</a>
+            <a href="barjolat.html" class="keyword-tag">برجولات مظللة</a>
+            <a href="gardens.html" class="keyword-tag">تنسيق نباتي</a>
+            <a href="gardens.html" class="keyword-tag">عشب طبيعي</a>
+            <a href="qarmid.html" class="keyword-tag">قرميد معدني</a>
+            <a href="decor.html" class="keyword-tag">ديكورات واجهات</a>
+            <a href="mazallat.html" class="keyword-tag">تركيب مظلات</a>
+            <a href="sawater.html" class="keyword-tag">تركيب سواتر</a>
+            <a href="khayam.html" class="keyword-tag">تركيب خيام</a>
+            <a href="hanajir.html" class="keyword-tag">بناء هناجر</a>
+            <a href="gardens.html" class="keyword-tag">تصميم حدائق</a>
+            <a href="qarmid.html" class="keyword-tag">تركيب قرميد</a>
+            <a href="decor.html" class="keyword-tag">تشطيب ديكورات</a>
+            <a href="mazallat.html" class="keyword-tag">مظلات هرمية</a>
+            <a href="sawater.html" class="keyword-tag">سواتر خشبية</a>
+            <a href="khayam.html" class="keyword-tag">خيام مناسبات</a>
+            <a href="khayam.html" class="keyword-tag">بيوت شعر فخمة</a>
+            <a href="hanajir.html" class="keyword-tag">هناجر كبيرة</a>
+            <a href="hanajir.html" class="keyword-tag">مستودعات ضخمة</a>
+            <a href="barjolat.html" class="keyword-tag">برجولات حديثة</a>
+            <a href="gardens.html" class="keyword-tag">تنسيق خارجي</a>
+            <a href="gardens.html" class="keyword-tag">عشب صناعي حدائق</a>
+            <a href="qarmid.html" class="keyword-tag">قرميد فخاري</a>
+            <a href="decor.html" class="keyword-tag">ديكورات سيراميك</a>
+            <a href="decor.html" class="keyword-tag">بديل السيراميك</a>
+            <a href="mazallat.html" class="keyword-tag">مظلات مواقف</a>
+            <a href="sawater.html" class="keyword-tag">سواتر خصوصية</a>
+            <a href="khayam.html" class="keyword-tag">خيام مؤقتة</a>
+            <a href="khayam.html" class="keyword-tag">بيوت شعر ملكية</a>
+            <a href="hanajir.html" class="keyword-tag">هناجر معزولة</a>
+            <a href="hanajir.html" class="keyword-tag">مستودعات مبردة</a>
+            <a href="barjolat.html" class="keyword-tag">برجولات جلسات</a>
+            <a href="gardens.html" class="keyword-tag">تنسيق مسابح</a>
+            <a href="gardens.html" class="keyword-tag">عشب صناعي ملعب</a>
+            <a href="qarmid.html" class="keyword-tag">قرميد سقوف</a>
+            <a href="decor.html" class="keyword-tag">ديكورات داخلية</a>
+            <a href="decor.html" class="keyword-tag">تشطيب خارجي</a>
+            <a href="mazallat.html" class="keyword-tag">مظلات مخروطية</a>
+            <a href="sawater.html" class="keyword-tag">سواتر معدنية</a>
+            <a href="khayam.html" class="keyword-tag">خيام احتفالات</a>
+            <a href="khayam.html" class="keyword-tag">بيوت شعر حديثة</a>
+            <a href="hanajir.html" class="keyword-tag">هناجر سريعة</a>
+            <a href="hanajir.html" class="keyword-tag">مستودعات أمنة</a>
+            <a href="barjolat.html" class="keyword-tag">برجولات أسطح</a>
+            <a href="gardens.html" class="keyword-tag">تنسيق فناء</a>
+            <a href="gardens.html" class="keyword-tag">عشب صناعي ملاعب</a>
+            <a href="qarmid.html" class="keyword-tag">قرميد وطني</a>
+            <a href="decor.html" class="keyword-tag">ديكورات جبسية</a>
+            <a href="decor.html" class="keyword-tag">تشطيب واجهات</a>
+            <a href="mazallat.html" class="keyword-tag">مظلات مساجد</a>
+            <a href="sawater.html" class="keyword-tag">سواتر مدارس</a>
+            <a href="khayam.html" class="keyword-tag">خيام معارض</a>
+            <a href="khayam.html" class="keyword-tag">بيوت شعر أعراس</a>
+            <a href="hanajir.html" class="keyword-tag">هناجر مستودعات</a>
+            <a href="hanajir.html" class="keyword-tag">مستودعات مشاريع</a>
+            <a href="barjolat.html" class="keyword-tag">برجولات استراحات</a>
+            <a href="gardens.html" class="keyword-tag">تنسيق منتجعات</a>
+            <a href="gardens.html" class="keyword-tag">عشب صناعي ملاعب</a>
+        </div>
+    </div>
+</section>
+
 <section class="seo-content-section" style="direction: rtl; text-align: right; font-family: 'Tajawal', sans-serif; line-height: 1.8; color: #444; background: #fff; padding: 60px 20px;">
     <div class="content-container" style="max-width: 1100px; margin: 0 auto;">
         
@@ -799,4 +1106,4 @@
 </footer>
 
 </body>
-</html>
+                </html>
